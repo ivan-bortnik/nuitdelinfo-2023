@@ -1,10 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-
 <script>
 
 import ioClient from 'socket.io-client';
+
+import Card from '../components/card.svelte';
 const ENDPOINT = 'http://localhost:3000';
 
 const socket = ioClient(ENDPOINT);
@@ -12,3 +10,9 @@ const socket = ioClient(ENDPOINT);
 export const io = socket;
 
 </script>
+
+<Card>
+    <h1 slot="card-title">Hello</h1>
+    <svg slot="card-thumb"></svg>
+    <p slot="card-desc"></p>
+</Card>
