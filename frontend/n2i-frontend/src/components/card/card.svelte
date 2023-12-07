@@ -6,7 +6,7 @@
     <div class="image-container">
         <img src="https://picsum.photos/125" alt="">
     </div>
-    <p class="text">{ text }</p>
+    <p class="description">{ description }</p>
     
     { :else }
     
@@ -20,7 +20,7 @@
 <script>
     
     export let title = "Title";
-    export let text = "Card description and such";
+    export let description = "Card description and such";
     export let isFlipped = false;
     
 </script>
