@@ -46,7 +46,7 @@ La partie s'arrête lorque toutes les cartes Intox sont **"dominées"**. Le gagn
 ## Les cartes
 ### Cartes Intox : 
 |Nom|Explication|Visuel|Poid|
-|:--:|:--:|:--:|:--;|
+|:--:|:--:|:--:|:--:|
 |Hiver plus froid|Une idée reçue considère que le réchauffement climatique est imaginaire puisqu'on connait des hivers toujours plus froids. En réalité, c'est lié au déréglement climatique, lui même conséquence du réchauffement climatique.||3|
 |Les vaches polluent|Les vaches polluent bel et bien grâce à leurs pets, mais cette pollution est grandement négligeable comparée à la pollution humaine.||3|
 |Scientifiques indécis|Certaines personnes pensent que les scientifiques sont en désaccords sur l'issue actuel du réchauffement due aux différents plans émis par le GIEC. En vérité, ces plans sont les issues les plus probables et dépendent de notre gestion de la pollution.||3|
