@@ -1,11 +1,3 @@
-<script>
-    
-export let title = "Title";
-export let text = "Card description and such";
-export let isFlipped = false;
-
-</script>
-
 <div class="card">
     { #if !isFlipped }
 
@@ -25,7 +17,15 @@ export let isFlipped = false;
 </div>
 
 
+<script>
+    
+    export let title = "Title";
+    export let text = "Card description and such";
+    export let isFlipped = false;
+    
+</script>
+
 
 <style lang="scss">
-    @import './card.scss';
+    @use './card.scss';
 </style>
