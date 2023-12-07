@@ -1,0 +1,239 @@
+{
+    "intox": [
+      {
+        "title": "Hiver plus froids",
+        "desc": "Une idée reçue considère que le réchauffement climatique est imaginaire puisqu'on connait des hivers toujours plus froids. En réalité, c'est lié au déréglement climatique, lui même conséquence du réchauffement climatique.",
+        "image": "<svg xmlns='/image/undraw_Snowman_re_guxt.png'</svg>",
+        "poid": "3"
+      },
+      {
+        "title": "Les vaches pollues",
+        "desc": "Les vaches polluent bel et bien grâce à leurs pets, mais cette pollution est grandement négligeable comparée à la pollution humaine.",
+        "image": "<svg xmlns='/image/undraw_Dog_c7i6.png'></svg>",
+        "poid": "3"
+      },
+      {
+        "title": "Scientifiques Indécies",
+        "desc": "Certaines personnes pensent que les scientifiques sont en désaccords sur l'issue actuel du réchauffement due aux différents plans émis par le GIEC. En vérité, ces plans sont les issues les plus probables et dépendent de notre gestion de la pollution.",
+        "image": "<svg xmlns='/image/undraw_Alien_science_re_0f8q.png'></svg>",
+        "poid": "3"
+      },
+      {
+        "title": "La technologie va tout résoudre",
+        "desc": "Les progrès technologiques avancent vite, mais espérer qu'ils avancent assez vite pour régler tous les problèmes liés au réchauffement climatique est une mauvaise manière de voir les choses. Ils n'avanceront jamais aussi vite que notre fin...",
+        "image": "<svg xmlns='/image/undraw_Programmer_re_owql.png'></svg>",
+        "poid": "2"
+      },
+      {
+        "title": "Le réchauffement posséde une limite",
+        "desc": "La seule limite du réchauffement climatique depend de notre conscience a arreter notre pollution a temps. Sinon la seule limite sera notre survie sous un soleils de plomb.",
+        "image": "<svg xmlns='/image/undraw_Growing_re_olpi.png'></svg>",
+        "poid": "2"
+      },
+      {
+        "title": "On a encore le temps",
+        "desc": "On pourrait penser qu'ils nous restent beaucoup de temps alors que l'on subit déjà des changements irréversibles sur le climat.",
+        "image": "<svg xmlns='/image/undraw_Time_management_re_tk5w.png'></svg>",
+        "poid": "2"
+      },
+      {
+        "title": "Le monde sous les eaux, c'est de la fiction",
+        "desc": "Eh bien non, ce n'est pas de la fiction. De nombreux territoires risquent la submersion d'ici 2050 voir plus tôt si ricn ne change.",
+        "image": "<svg xmlns='/image/undraw_Ready_for_waves_vlke.png'></svg>",
+        "poid": "2"
+      },
+      {
+        "title": "Les catastrophes métérologiques n'est pas une conséquence du réchauffement climatique",
+        "desc": "La majorité des catastrophes sont liées à des différences de températures. Le réchauffement climatique intensifie ces différences, créant de plus en plus de catastrophes et dans des endroits non propices à ce genre d'évènements.",
+        "image": "<svg xmlns='/image/undraw_Raining_re_4b55.png'></svg>",
+        "poid": "2"
+      },
+      {
+        "title": "En France, on est tranquille",
+        "desc": "Non, la france ne sera pas épargnée par le réchauffement climatique. Le risque en France est majoritairement la montée des eaux.",
+        "image": "<svg xmlns='/image/undraw_Eiffel_tower_re_e11r.png'></svg>",
+        "poid": "1"
+      },
+      {
+        "title": "Les politiques actuelles suffisent",
+        "desc": "A l'heure actuelle, si on continue sur notre lancée et que tout le monde applique ces politiques, nous fonçons droit dans le mur.",
+        "image": "<svg xmlns='/image/undraw_Throw_away_re_x60k.png'></svg>",
+        "poid": "1"
+      },
+      {
+        "title": "Les actions individuels n'ont pas d'impacts",
+        "desc": "En réalité les actions individuelles n'ont certes pas d'impact à l'échelle d'une personne mais ont un impact colossale à l'échelle du monde.",
+        "image": "<svg xmlns='/image/undraw_Team_re_0bfe.png'></svg>",
+        "poid": "1"
+      },
+      {
+        "title": "L'évolution s'est toujours adapté",
+        "desc": "L'Homme s'est toujours adapté mais ici le temps est beaucoup trop court pour permettre une évolution de notre espèce.",
+        "image": "<svg xmlns='/image/undraw_wilderness_81ka.png'></svg>",
+        "poid": "1"
+      },
+      {
+        "title": "S'adapter c'est renoncer",
+        "desc": "S'adapter n'est pas renoncer au contraire. C'est évoluer vers un mode de vie meilleur.",
+        "image": "<svg xmlns='/image/undraw_feeling_blue_4b7q.png'></svg>",
+        "poid": "1"
+      },
+      {
+        "title": "C'est une invention",
+        "desc": "Non le réchauffement climatique est bien réel et on en ressent déjà les effets : des hivers plus froids et des étés plus chauds.",
+        "image": "<svg xmlns='frontend/n2i-frontend/static/image/undraw_My_universe_803e.png'></svg>",
+        "poid": "1"
+      },
+      {
+        "title": "C'est juste le cycle terrestre",
+        "desc": "Oui le cycle terrestre peut certes impacter le climat, mais nous ne connaitrons plus d'ère glaciaire etc.",
+        "image": "<svg xmlns='/image/undraw_Adventure_re_ncqp.png'></svg>",
+        "poid": "1"
+      }
+    ], 
+    "action": [
+        {
+            "title": "Espionnage Industriel",
+            "desc": "Vous pouvez regarder 2 cartes du jeux de votres adversaires",
+            "image": "<svg xmlns='/image/undraw_Surveillance_re_8tkl.png'></svg>"
+        },
+        {
+            "title": "Vol de donnée",
+            "desc": "Vous pouvez voler une carte du jeu de votre adversaire",
+            "image": "<svg xmlns='/image/undraw_Vault_re_s4my.png'></svg>"
+        },
+        {
+            "title": "Destruction de donnée",
+            "desc": "Vous pouvez choisir 2 cartes de votre adversaires qu'il doit alors défausser",
+            "image": "<svg xmlns='/image/undraw_dark_alley_hl3o.png'></svg>"
+        },
+        {
+            "title": "Restitution de donnée",
+            "desc": "Vous pouvez Récupérer 2 cartes en provenance de la défausse de votre équipe ",
+            "image": "<svg xmlns='/image/undraw_Receipt_re_fre3.png'></svg>"
+        },
+        {
+            "title": "Vol de donnée abandonnée",
+            "desc": "Vous pouvez prendre une carte de la défausse de l'équipe adverse",
+            "image": "<svg xmlns='/image/undraw_search_app_oso2.png'></svg>"
+        },
+        {
+            "title": "Création de donnée",
+            "desc": "Piocher 2 cartes",
+            "image": "<svg xmlns='/image/undraw_Creation_process_re_kqa9.png'></svg>"
+        },
+        {
+            "title": "Interview Bonus",
+            "desc": "Vous permet de faire une action en plus (ne compte pas comme une action)",
+            "image": "<svg xmlns='/image/undraw_Interview_re_e5jn.png'></svg>"
+        },
+        {
+            "title": "Catastrophe écologique",
+            "desc": "A jouez avec un combo sur une carte intox, Ajoute +1 sur le poids de la communication",
+            "image": "<svg xmlns='/image/undraw_windy_day_x63l.png'></svg>"
+        },
+        {
+            "title": "Casier judiciaires",
+            "desc": "Retire 1 de poids sur le prochain combo de votre adversaires",
+            "image": "<svg xmlns='/image/undraw_treasure_of9i.png'></svg>"
+        },
+        {
+            "title": "Manifestation Vegan",
+            "desc": "Donne Instantanément 1 poids bonus",
+            "image": "<svg xmlns='/image/undraw_barbecue_3x93.png'></svg>"
+        }
+
+    ],
+    "info": [
+        {
+            "title": "Article scientifique frauduleu",
+            "desc": "Un faux article dans le but d'induire en erreur",
+            "image": "<svg xmlns='/image/undraw_articles_wbpb.png'></svg>",
+            "poid": "3",
+            "type": "sujet"
+        },
+        {
+            "title": "Rapport du GIEC",
+            "desc": "Un article publié par le GIEC",
+            "image": "<svg xmlns='/image/undraw_Science_re_mnnr.png'></svg>",
+            "poid": "3",
+            "type": "sujet"
+        },
+        {
+            "title": "COP22",
+            "desc": "Assemblée des chefs d'états pour parler du réchauffement climatique",
+            "image": "<svg xmlns='/image/undraw_Conversation_re_c26v.png'></svg>",
+            "poid": "2",
+            "type": "sujet"
+        },
+        {
+            "title": "Tweet",
+            "desc": "Un tweet de désintox sur le réchauffement climatique",
+            "image": "<svg xmlns='/image/undraw_Tweetstorm_re_n0rs.png'></svg>",
+            "poid": "1",
+            "type": "sujet"
+        },
+        {
+            "title": "Action mensongère",
+            "desc": "Campagne de pub d'une entreprise accompagnée d'une action qui en réalité aggrave le réchauffement",
+            "image": "<svg xmlns='/image/undraw_Cloud_hosting_7xb1.png'></svg>",
+            "poid": "2",
+            "type": "sujet"
+        },
+        {
+            "title": "Allocution présidentielle",
+            "desc": "Le président fait une annonce",
+            "image": "<svg xmlns='/image/undraw_Conference_speaker_re_1rna.png'></svg>",
+            "poid": "3",
+            "type": "communication"
+        },
+        {
+            "title": "Passage sur une chaine télévisée d'information",
+            "desc": "Une chaine en parle dans son JT",
+            "image": "<svg xmlns='/image/undraw_Presentation_re_sxof.png'></svg>",
+            "poid": "2",
+            "type": "communication"
+        },
+        {
+            "title": "Article de journal",
+            "desc": "Un journal connue écrit un article dessus",
+            "image": "<svg xmlns='/image/undraw_Online_articles_re_yrkj.png'></svg>",
+            "poid": "2",
+            "type": "communication"
+        },
+        {
+            "title": "Réseaux sociaux",
+            "desc": "Un post sur les réseaux sociaux",
+            "image": "<svg xmlns='/image/undraw_Social_girl_re_kdrx.png'></svg>",
+            "poid": "1",
+            "type": "communication"
+        },
+        {
+            "title": "Blog",
+            "desc": "Un blog d'un inconnu",
+            "image": "<svg xmlns='/image/undraw_Blog_post_re_fy5x.png'></svg>",
+            "poid": "1",
+            "type": "communication"
+        }
+    ],
+    "theme": [
+        {
+            "title": "Voyage en Traineau",
+            "desc": "Prenez le traineau magique et piochez 2 cartes",
+            "image": "/image/undraw_snow_fun_re_plbr.png",
+            "linked-theme":"noel"
+        },
+        {
+            "title": "Carte pas ecolo",
+            "desc": "Totalement inutile et ne peut être défaussé",
+            "image": "/image/undraw_Page_not_found_re_e9o6.png",
+            "linked-theme":"darkmode"
+        },
+        {
+            "title": "Bonne action animal",
+            "desc": "Effectuer une bonne action envers la biodiversité et gagner instantanément 2 poids",
+            "image": "/image/undraw_friends_r511.png",
+            "linked-theme":"kawai"
+        }
+    ]
+  }
