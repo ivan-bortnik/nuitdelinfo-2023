@@ -17,49 +17,51 @@ Le plateau de jeu se présente de la manière suivante :
 - 9 cartes **"Intox"** sont posées au centre du plateau
 - Une pioche à gauche pour les cartes **"Actions"**
 - Une pioche à droite pour les cartes **"Informations"**
-- Une défausse par équipes
+- Une défausse par équipe
 - Le jeu de chaque équipe se situe en bas de l'écran et reste caché pour l'équipe adverse
-
-### Condition de victoire
-
-Pour gagner, il faut que le maximum de personne croit aux informations de l'une des deux équipes. Pour se faire, il faut placer un combo composé d'une carte **"Sujet"** et d'une carte **"Informations"**. Le nombres de personnes convaincues est déterminé par la multiplication entre le poids de la carte **"Sujet"** avec le poids de la carte **"Communication"**.
 
 ### Début de la partie
 
-Chaque joueur commence par piocher **6 cartes**.
+Chaque joueur se créé une main de **6 cartes** composée de cartes **"Action"** et de cartes **"Informations"**.
 
 L'équipe des méchants commence toujours.
 
-Un joueur ne peut pas avoir plus de 10 cartes à la fin du tour.
-Si au début du tour, le joueur a moins de 4 cartes, il pioche jusqu'à en avoir 4.
-
 ### Déroulement d'un tour : 
 
-Si moins de 4 cartes, le joueur pioche jusqu'à avoir 4 cartes ->Le joueur pioche 1 carte -> Le joueur joue une carte action ou un combo informations -> Défausse si + de 10 cartes
+Au début de son tour, Le joueur peut alors **piocher une carte "Action" ou "Information"**, ou alors **piocher la carte visible de sa défausse**. Si le joueur avait moins de 4 cartes avant de piocher, il doit piocher autant de cartes manquantes pour avoir une main de 4 cartes.
+
+Il joue ensuite :
+- Soit une carte **"Action** : L'action de cette carte est alors réalisée.
+
+- Soit une carte **"Sujet"** avec une carte **"Communication"** afin de **dominer** une carte Intox. Une carte Intox peut être dominée si le poids de chacune des deux cartes jouées est supérieur ou égal à celui de la carte Intox. Le poids rapporté par cette domination est égal au poids de la carte **"Sujet"** multiplié avec le poids de la carte **"Communication"** et de la carte Intox. Une carte dominée ne peut plus être dominée pour le reste de la partie.
+
+Si à la fin de son tour l'équipe a plus de 10 cartes, elle est contrainte de mettre à la défausse le nombre de cartes nécessaires pour n'avoir plus que 10 cartes.
+
+Le tour se termine et c'est alors à l'équipe suivante de jouer.
 
 ### Fin de partie
 
-La partie s'arrête lorque toutes les cartes Intox sont **"dominées"**, c'est à dire prises par une équipe. Une carte Intox dominée l'est pour toute la partie.
+La partie s'arrête lorque toutes les cartes Intox sont **"dominées"**. Le gagnant est l'équipe qui aura le plus de poids.
 
 ## Les cartes
 ### Cartes Intox : 
-|Nom|Explication|Visuel|
-|:--:|:--:|:--:|
-|Hiver plus froid|Une idée reçue considère que le réchauffement climatique est imaginaire puisqu'on connait des hivers toujours plus froids. En réalité, c'est lié au déréglement climatique, lui même conséquence du réchauffement climatique.||
-|Les vaches polluent|Les vaches polluent bel et bien grâce à leurs pets, mais cette pollution est grandement négligeable comparé à la pollution humaine.||
-|Scientifiques indécis|Certaines personnes pensent que les scientifiques sont en désaccords sur l'issue actuel du réchauffement due aux différents plans émis par le GIEC. En vérité, ces plans sont les issues les plus probables et dépendent de notre gestion de la pollution.||
-|La technologie va tout résoudre|Certes, les progrès technologiques permettront de cependant au vue des progres actuels, nous seront complétement vers bien aprés avoir épuisé toutes les ressources terrestres.||
-|Le réchauffement posséde une limite|La seule limite du réchauffement climatique depend de notre conscience a arreter notre pollution a temps. Sinon la seule limite sera notre survie sous un soleils de plomb.||
-|On a encore le temps|On pourrait penser qu'ils nous restent beaucoup de temps alors que l'on subit déjà des changement irréversibles sur le climat.||
-|Le monde sous les eaux, c'est de la fiction|Eh bien non, ce n'est pas une fiction, de nombreux territoires risquent la submersion d'ici 2050 voir plus tot si rien ne change.||
-|Les Catastrophes métérologiques ces pas a cause de ça|La majorité des catastrophes sont lié a des differences de température, le réchauffement climatique intensifie ces differences créant de plus en plus de catastrophe et dans des endrot inhabituel.||
-|En France, on est tranquille|Non, la france ne sera pas épargnée par le réchauffement climatique, surtout pour la montée des eaux.||
-|Les politiques actuelles suffisent|A l'heure actuelle, si on continue sur notre lancée et que TOUT LE MONDE applique ces politiques, nous fonçons droit dans le mur.||
-|Les actions individuels n'ont pas d'impacts|En réalité les actions individuels n'ont certes pas d'impact a l'echelle d'une personne mais ont un impact colossale a l'echelle du monde.||
-|L'évolution s'est toujours adapté|L'Homme s'est toujours adaptée mais ici le temps est beaucoup trop cours pour permetre une évolution de notre éspece.||
-|S'adapter c'est renoncer|S'adapter n'est pas renoncer au contraire, c'est évolué vers un mode de vie meilleur pour tout le monde.||
-|C'est une invention|Non le réchauffement climatqiue est bien réel et on en ressent déja les effets, des hivers plus froids et des été plus chauds.||
-|C'est juste le cycle terrestre|Oui le cycle terrestre peut certes impacté cependant nous ne connaitront plus d'ere glaciaire etc.||
+|Nom|Explication|Visuel|Poid|
+|:--:|:--:|:--:|:--;|
+|Hiver plus froid|Une idée reçue considère que le réchauffement climatique est imaginaire puisqu'on connait des hivers toujours plus froids. En réalité, c'est lié au déréglement climatique, lui même conséquence du réchauffement climatique.||3|
+|Les vaches polluent|Les vaches polluent bel et bien grâce à leurs pets, mais cette pollution est grandement négligeable comparée à la pollution humaine.||3|
+|Scientifiques indécis|Certaines personnes pensent que les scientifiques sont en désaccords sur l'issue actuel du réchauffement due aux différents plans émis par le GIEC. En vérité, ces plans sont les issues les plus probables et dépendent de notre gestion de la pollution.||3|
+|La technologie va tout résoudre|Les progrès technologiques avancent vite, mais espérer qu'ils avancent assez vite pour régler tous les problèmes liés au réchauffement climatique est une mauvaise manière de voir les choses. Ils n'avanceront jamais aussi vite que notre fin...||2|
+|Le réchauffement climatique posséde une limite|La seule limite du réchauffement climatique depend de notre conscience a arreter notre pollution a temps. Sinon la seule limite sera notre survie sous un soleils de plomb.||2|
+|On a encore le temps|On pourrait penser qu'ils nous restent beaucoup de temps alors que l'on subit déjà des changements irréversibles sur le climat.||2|
+|Le monde sous les eaux, c'est de la fiction|Eh bien non, ce n'est pas de la fiction. De nombreux territoires risquent la submersion d'ici 2050 voir plus tôt si ricn ne change.||2|
+|Les catastrophes métérologiques n'est pas une conséquence du réchauffement climatique|La majorité des catastrophes sont liées à des différences de températures. Le réchauffement climatique intensifie ces différences, créant de plus en plus de catastrophes et dans des endroits non propices à ce genre d'évènements.||2|
+|En France, on est tranquille|Non, la france ne sera pas épargnée par le réchauffement climatique. Le risque en France est majoritairement la montée des eaux.||1|
+|Les politiques actuelles suffisent|A l'heure actuelle, si on continue sur notre lancée et que tout le monde applique ces politiques, nous fonçons droit dans le mur.||1|
+|Les actions individuels n'ont pas d'impacts|En réalité les actions individuelles n'ont certes pas d'impact à l'échelle d'une personne mais ont un impact colossale à l'échelle du monde.||1|
+|L'Homme s'est toujours adapté|L'Homme s'est toujours adapté mais ici le temps est beaucoup trop court pour permettre une évolution de notre espèce.||1|
+|S'adapter c'est renoncer|S'adapter n'est pas renoncer au contraire. C'est évoluer vers un mode de vie meilleur.||1|
+|Le réchauffement climatique est une invention|Non le réchauffement climatique est bien réel et on en ressent déjà les effets : des hivers plus froids et des étés plus chauds.||1|
+|C'est juste le cycle terrestre|Oui le cycle terrestre peut certes impacter le climat, mais nous ne connaitrons plus d'ère glaciaire etc.||1|
 
 ### Cartes Informations : 
 
