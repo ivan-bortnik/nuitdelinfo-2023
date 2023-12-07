@@ -11,7 +11,7 @@
     { :else }
     
     <!-- Back -->
-    <p>BACK</p>
+    <div class="back"></div>
     
     { /if }
 </div>

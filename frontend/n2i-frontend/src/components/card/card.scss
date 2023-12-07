@@ -1,7 +1,7 @@
 @use "../../palette";
 
 .card {
-    background-color: $card-front;
+    background-color: white;
 
     
     width: 175px;
@@ -16,8 +16,10 @@
     align-items: center;
     text-align: center;
     
-    padding: 8px;
+    // padding: 8px;
     box-sizing: border-box;
+
+    overflow: hidden;
 }
 
 .title {
@@ -34,4 +36,13 @@ img {
 
 .text {
     margin: 12px 0;
+}
+
+.back {
+    background-color: palette.$dark-green;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 8px solid palette.$light-green;
+    box-sizing: border-box;
 }
