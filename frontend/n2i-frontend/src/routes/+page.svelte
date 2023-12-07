@@ -12,7 +12,7 @@ export const io = socket;
 </script>
 
 <Card>
-    <h1 slot="card-title">Hello</h1>
+    <h1 slot="card-title">This is a title</h1>
     <svg slot="card-thumb"></svg>
-    <p slot="card-desc"></p>
+    <p slot="card-desc">This is a desc</p>
 </Card>

@@ -1,6 +1,42 @@
 @import '../_palette.scss';
 
 .card {
+    filter: drop-shadow(0 0 5px black);
+    background-color: $card-front;
+    width: 175px;
+    height: 249px;
     border-radius: 8px;
-    background-color: $card-bg;
+}
+
+.back > .card-outside {
+    border-radius: 8px;
+    padding: 6px;
+    background-color: $card-back-accent;
+    display: flex;
+    font: 14pt sans-serif;
+    color: $card-font;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-inner {
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+    background-color: $card-back;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-outside {
+    display: none;
+}
+
+:global( [slot="card-desc"] ) {
+    font: 14pt sans-serif;
+}
+
+:global( [slot="card-thumb"] ) {
 }
