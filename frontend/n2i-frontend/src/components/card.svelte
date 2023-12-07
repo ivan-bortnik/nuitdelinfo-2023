@@ -1,15 +1,30 @@
 <script>
     
+export let title = "Title";
+export let text = "Card description and such";
+export let isFlipped = false;
+
 </script>
 
 <div class="card">
-    <div class="card-outside">
-        <div class="card-inner"></div>
+    { #if !isFlipped }
+
+    <!-- Front -->
+    <p class="title">{ title }</p>
+    <div class="image-container">
+        <img src="https://picsum.photos/125" alt="">
     </div>
-    <slot class="card-title" name="card-title"/>
-    <slot class="card-thumb" name="card-thumb"/>
-    <slot class="card-desc" name="card-desc"/>
+    <p class="text">{ text }</p>
+    
+    { :else }
+    
+    <!-- Back -->
+    <p>BACK</p>
+    
+    { /if }
 </div>
+
+
 
 <style lang="scss">
     @import './card.scss';

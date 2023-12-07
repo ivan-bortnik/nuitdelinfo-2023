@@ -6,37 +6,26 @@
     width: 175px;
     height: 249px;
     border-radius: 8px;
-}
-
-.back > .card-outside {
-    border-radius: 8px;
-    padding: 6px;
-    background-color: $card-back-accent;
-    display: flex;
-    font: 14pt sans-serif;
-    color: $card-font;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.card-inner {
-    border-radius: 2px;
-    height: 100%;
-    width: 100%;
-    background-color: $card-back;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
 }
 
-.card-outside {
-    display: none;
+.title {
+    font-weight: bold;
 }
 
-:global( [slot="card-desc"] ) {
-    font: 14pt sans-serif;
+.image-container {
+    flex-grow: 1;
 }
 
-:global( [slot="card-thumb"] ) {
+img {
+    max-height: 100px;
+}
+
+.text {
+    margin: 12px 0;
 }
