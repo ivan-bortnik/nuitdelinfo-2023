@@ -3,25 +3,48 @@
 </svelte:head>
 
 <main id="board">
-    <div id="opponent-deck" class="deck"><Card isFlipped={true}/><Card isFlipped={true}/><Card isFlipped={true}/><Card isFlipped={true}/><Card isFlipped={true}/><Card isFlipped={true}/></div>
-    <div class="mat">
-        <div class="draws">
-            <div id="action-draw"><Card isFlipped={true}/></div>
-            <div id="information-draw"><Card isFlipped={true}/></div>
-        </div>
-        <div id="misinformations">
-            <MisinformationCards /><MisinformationCards /><MisinformationCards />
-            <MisinformationCards /><MisinformationCards /><MisinformationCards />
-            <MisinformationCards /><MisinformationCards /><MisinformationCards />
-        </div>
-        <div class="discards">
-            <div id="opponent-discard"><Card isFlipped={false}/></div>
-            <div id="my-discard"><Card isFlipped={false}/></div>
-        </div>
+    <div class="opponent-hand">
+        <Card isFlipped={true} />
+        <Card isFlipped={true} />
+        <Card isFlipped={true} />
+        <Card isFlipped={true} />
     </div>
-    <div class="my-deck-wrapper">
-        <div id="my-deck" class="deck"><Card isFlipped={false}/><Card isFlipped={false}/><Card isFlipped={false}/><Card isFlipped={false}/><Card isFlipped={false}/><Card isFlipped={false}/></div>
-        <div class="my-deck-back"></div>
+
+    <div id="central-board">
+
+        <div id="decks">
+            <Card isFlipped={true} />
+            <Card isFlipped={true} />
+        </div>
+
+        <div id="central-grid-wrapper">
+            <div id="central-grid">
+                <MisinformationCards />
+                <MisinformationCards />
+                <MisinformationCards />
+                <MisinformationCards />
+                <MisinformationCards />
+                <MisinformationCards />
+                <MisinformationCards />
+                <MisinformationCards />
+                <MisinformationCards />
+            </div>
+        </div>
+        
+        <div id="discards">
+            <Card isFlipped={false} />
+            <Card isFlipped={false} />
+        </div>
+
+    </div>
+
+    <div id="my-hand">
+        <Card isEnlargable={true}/>
+        <Card isEnlargable={true}/>
+        <Card isEnlargable={true}/>
+        <Card isEnlargable={true}/>
+        <Card isEnlargable={true}/>
+        <Card isEnlargable={true}/>
     </div>
 </main>
 

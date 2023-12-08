@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" class:enlargable={ isEnlargable }>
     { #if !isFlipped }
 
     <!-- Front -->
@@ -22,6 +22,7 @@
     export let title = "Title";
     export let text = "Card description and such";
     export let isFlipped = false;
+    export let isEnlargable = false;
     
 </script>
 

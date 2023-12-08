@@ -20,6 +20,13 @@
     box-sizing: border-box;
 
     overflow: hidden;
+
+    transition: 0.15s;
+}
+
+.enlargable:hover {
+    transform: scale(1.5) translateY(-72px);
+    transition: 0.15s;
 }
 
 .title {
