@@ -1,40 +1,40 @@
+<div class="username-form">
+  <label for="username" class="username-label">Enter your username:</label>
+  <input bind:value={username} type="text" id="username" class="username-input" />
+  <button on:click={ handleUsernameSubmit } class="submit-button">Submit Username</button>
+</div>
+
 <script>
-  export let pseudo;
+  let username;
   import { createEventDispatcher } from 'svelte';
     
   const dispatch = createEventDispatcher();
 
-  const handlePseudoSubmit = () => {
-    if (pseudo === '') {
-      alert('Please enter a pseudo');
+  const handleUsernameSubmit = () => {
+    if (username === '') {
+      alert('Please enter a username');
       return;
     }
 
     // Emit an event to notify the parent component
-    dispatch('pseudoSubmitted', pseudo);
+    dispatch('usernameSubmitted', username);
   };
 </script>
 
-<div class="pseudo-form">
-  <label for="pseudo" class="pseudo-label">Enter your pseudo:</label>
-  <input bind:value={pseudo} type="text" id="pseudo" class="pseudo-input" />
-  <button on:click={handlePseudoSubmit} class="submit-button">Submit Pseudo</button>
-</div>
-
 <style>
-  .pseudo-form {
+  .username-form {
     max-width: 300px;
     margin: 50px auto;
     text-align: center;
   }
 
-  .pseudo-label {
+  .username-label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
   }
 
-  .pseudo-input {
+  .username-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;

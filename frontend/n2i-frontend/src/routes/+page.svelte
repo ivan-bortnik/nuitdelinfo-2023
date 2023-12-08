@@ -1,54 +1,60 @@
+<svelte:head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+</svelte:head>
+
+{#if page == 'home'}
+    <Home on:usernameSubmitted={ usernameSubmittedHandler }/>
+{:else if page == 'rooms'}
+    <RoomsList rooms={ rooms } on:roomCreated={ roomCreatedHandler } on:joinRoom={ joinRoomHandler }/>
+{/if}
+
+
 <script>
-    import { onMount } from 'svelte';
+    import Home from '../components/home/home.svelte';
+    import RoomsList from '../components/home/roomsList.svelte';
+
+    // import { onMount } from 'svelte';
     import ioClient from 'socket.io-client';
-    import PseudoForm from '../components/connexion/pseudoForm.svelte';
-    import RoomList from '../components/connexion/roomDisplay.svelte';
-    import DisplayExample from '../path-to-your-component/DisplayExample.svelte';
       
     const ENDPOINT = 'http://localhost:3000';
     const socket = ioClient(ENDPOINT);
     export const io = socket;
       
-    var rooms = {};
-    let pseudo = '';
+    let username = '';
     let selectedRoom = null;
+    let rooms = {};
+    let page = 'home';
+
+    function usernameSubmittedHandler(_username) {
+        username = _username;
+        page = 'rooms';
+    }
     
-    onMount(() => {
-      // Fetch rooms or perform any other initializations here
-      io.on('updateRoomsList', (data) => {
+    function roomCreatedHandler() {
+        io.emit('createRoom');
+    }
+
+    function joinRoomHandler(roomID) {
+        io.emit('requestToJoin', roomID.detail);
+    }
+
+    io.on('updateRoomsList', (data) => {
         rooms = data;
-      });
     });
-  
-    const handlePseudoSubmitted = (submittedPseudo) => {
-      // Update the pseudo in the parent component
-      pseudo = submittedPseudo;
-    };
-  
-    const handleRoomClick = (roomTitle) => {
-      selectedRoom = roomTitle;
-    };
-  </script>
+
+</script>
       
-  <svelte:head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
-      rel="stylesheet"
-    />
-  </svelte:head>
+  
       
-  {#if pseudo === ''}
-    <PseudoForm {pseudo} on:pseudoSubmitted={handlePseudoSubmitted} />
-  {:else if selectedRoom !== null}
-    <DisplayExample {roomTitle=selectedRoom} />
-  {:else}
-    <RoomList {io} {rooms} on:roomClick={handleRoomClick} />
-  {/if}
 
 <style>
 
     :global(body) {
       font-family: 'Nunito';
     }
-  </style>
+
+</style>
   

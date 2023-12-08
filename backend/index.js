@@ -16,7 +16,7 @@ var rooms = {}
 
 
 app.get('/', (req, res) => {
-  res.send('<h1>Backend</h1><h2>T\'es pas cense etre la mon reuf</h2>');
+  res.send('perhaps');
 });
 
 io.on('connection', (socket) => {
