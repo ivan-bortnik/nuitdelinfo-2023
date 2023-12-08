@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card-{theme}">
     { #if !isFlipped }
 
     <!-- Front -->
@@ -11,7 +11,7 @@
     { :else }
     
     <!-- Back -->
-    <div class="back"></div>
+    <div class="back-{theme}"></div>
     
     { /if }
 </div>
@@ -22,6 +22,9 @@
     export let title = "Title";
     export let description = "Card description and such";
     export let isFlipped = false;
+    export let theme = "classique";
+    
+    
     
 </script>
 

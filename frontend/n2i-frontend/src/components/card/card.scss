@@ -1,13 +1,83 @@
-@use "../../palette";
+@use "../../palette-classique";
+@use "../../palette-darkmode";
+@use "../../palette-kawai";
+@use "../../palette-noel";
 
-.card {
-    background-color: white;
+.card-classique {
+    background-color: palette-classique.$card-front;
+    color: palette-classique.$card-font;
+    
+    width: 175px;
+    height: 249px;
+
+    filter: drop-shadow(0 0 5px palette-classique.$card-shadow);
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    // padding: 8px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.card-darkmode {
+    background-color: palette-darkmode.$card-front;
+    color: palette-darkmode.$card-font;
 
     
     width: 175px;
     height: 249px;
 
-    filter: drop-shadow(0 0 5px black);
+    filter: drop-shadow(0 0 5px palette-darkmode.$card-shadow);
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    // padding: 8px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.card-kawai {
+    background-color: palette-kawai.$card-front;
+    color: palette-kawai.$card-font;
+    
+    width: 175px;
+    height: 249px;
+
+    filter: drop-shadow(0 0 5px palette-kawai.$card-shadow);
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    // padding: 8px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.card-noel {
+    background-color: palette-noel.$card-front;
+    color: palette-noel.$card-font;
+    
+    width: 175px;
+    height: 249px;
+
+    filter: drop-shadow(0 0 5px palette-noel.$card-shadow);
 
     border-radius: 8px;
 
@@ -38,11 +108,38 @@ img {
     margin: 12px 0;
 }
 
-.back {
-    background-color: palette.$dark-green;
+.back-classique {
+    background-color: palette-classique.$card-back;
     height: 100%;
     width: 100%;
     border-radius: 8px;
-    border: 8px solid palette.$light-green;
+    border: 8px solid palette-classique.$card-back-accent;
+    box-sizing: border-box;
+}
+
+.back-darkmode {
+    background-color: palette-darkmode.$card-back;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 8px solid palette-darkmode.$card-back-accent;
+    box-sizing: border-box;
+}
+
+.back-kawai {
+    background-color: palette-kawai.$card-back;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 8px solid palette-kawai.$card-back-accent;
+    box-sizing: border-box;
+}
+
+.back-noel {
+    background-color: palette-noel.$card-back;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 8px solid palette-noel.$card-back-accent;
     box-sizing: border-box;
 }
