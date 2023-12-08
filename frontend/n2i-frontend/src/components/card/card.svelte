@@ -1,4 +1,4 @@
-<div class="card" class:enlargable={ isEnlargable }>
+<div class="card card-{theme}" class:enlargable={ isEnlargable }>
     { #if !isFlipped }
 
     <!-- Front -->
@@ -6,12 +6,12 @@
     <div class="image-container">
         <img src="https://picsum.photos/125" alt="">
     </div>
-    <p class="text">{ text }</p>
+    <p class="description">{ description }</p>
     
     { :else }
     
     <!-- Back -->
-    <div class="back"></div>
+    <div class="back-{theme}"></div>
     
     { /if }
 </div>
@@ -20,9 +20,10 @@
 <script>
     
     export let title = "Title";
-    export let text = "Card description and such";
+    export let description = "Card description and such";
     export let isFlipped = false;
     export let isEnlargable = false;
+    export let theme = "classique";
     
 </script>
 
