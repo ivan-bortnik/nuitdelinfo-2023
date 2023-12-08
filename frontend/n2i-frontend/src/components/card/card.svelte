@@ -2,11 +2,11 @@
     { #if !isFlipped }
 
     <!-- Front -->
-    <p class="title">{ title }</p>
+    <p class="title">{ data.title }</p>
     <div class="image-container">
-        <img src="https://picsum.photos/125" alt="">
+        <img src="" alt="">
     </div>
-    <p class="description">{ description }</p>
+    <p class="description">{ data.desc }</p>
     
     { :else }
     
@@ -18,6 +18,29 @@
 
 
 <script>
+    import jsonData from '../../cards.json';
+    
+    export let type =""; 
+
+    let max = 10
+    let number = 0;
+    let data = jsonData.action[0];
+
+    if(type == "action")
+    {
+        max = 9;
+        number = Math.floor(Math.random() * (max - 0 + 1)) + 0
+        data = jsonData.action[number];
+    }
+    else if(type == "info")
+    {
+        max =9;
+        number = Math.floor(Math.random() * (max - 0 + 1)) + 0
+        data = jsonData.info[number];
+    }
+
+    
+    
     
     export let title = "Title";
     export let description = "Card description and such";

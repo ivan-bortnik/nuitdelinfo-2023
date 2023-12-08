@@ -1,16 +1,19 @@
 <div class="misinformation-card">
     <div class="image-container">
-        <img src="https://picsum.photos/100/100" alt="">
+        {@html data.image}
     </div>
     <div class="txt-container">
-        <p>{ title }</p>
+        <p>{ data.title }</p>
     </div>    
 </div>
 
 
 <script>
 
-export var title = "Card Title";
+    import jsonData from '../../cards.json';
+    let max = 14;
+    let number = Math.floor(Math.random() * (max - 0 + 1)) + 0;
+    let data = jsonData.intox[number];
 
 </script>
 

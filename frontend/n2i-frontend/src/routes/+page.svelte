@@ -4,17 +4,17 @@
 
 <main id="board">
     <div class="opponent-hand">
-        <Card isFlipped={true} && theme={selectedOption}/>
-        <Card isFlipped={true} && theme={selectedOption}/>
-        <Card isFlipped={true} && theme={selectedOption}/>
-        <Card isFlipped={true} && theme={selectedOption}/>
+        <Card isFlipped={true} theme={selectedOption}/>
+        <Card isFlipped={true} theme={selectedOption}/>
+        <Card isFlipped={true} theme={selectedOption}/>
+        <Card isFlipped={true} theme={selectedOption}/>
     </div>
 
     <div id="central-board">
 
         <div id="decks">
-            <Card isFlipped={true} && theme={selectedOption}/>
-            <Card isFlipped={true} && theme={selectedOption}/>
+            <Card isFlipped={true} theme={selectedOption} type={"action"}/>
+            <Card isFlipped={true} theme={selectedOption} type={"action"}/>
         </div>
 
         <div id="central-grid-wrapper">
@@ -39,12 +39,12 @@
     </div>
 
     <div id="my-hand">
-        <Card isEnlargable={true} && theme={selectedOption}/>
-        <Card isEnlargable={true} && theme={selectedOption}/>
-        <Card isEnlargable={true} && theme={selectedOption}/>
-        <Card isEnlargable={true} && theme={selectedOption}/>
-        <Card isEnlargable={true} && theme={selectedOption}/>
-        <Card isEnlargable={true} && theme={selectedOption}/>
+        <Card isEnlargable={true} theme={selectedOption} type={"action"}/>
+        <Card isEnlargable={true} theme={selectedOption} type={"action"}/>
+        <Card isEnlargable={true} theme={selectedOption} type={"action"}/>
+        <Card isEnlargable={true} theme={selectedOption} type={"info"}/>
+        <Card isEnlargable={true} theme={selectedOption} type={"info"}/>
+        <Card isEnlargable={true} theme={selectedOption} type={"info"}/>
     </div>
 </main>
 
