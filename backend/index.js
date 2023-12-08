@@ -28,15 +28,27 @@ io.on('connection', (socket) => {
     const newRoom = { "id": generateRandomRoomName(), "playersCount": 1 }
     rooms[newRoom.id] = newRoom;
 
-    socket.join(newRoom);
+    socket.join(newRoom.id);
     console.log(`User ${socket.id} created and joined room ${newRoom.id}`);
 
     io.emit('updateRoomsList', rooms);
   });
 
   socket.on('requestToJoin', (room) => {
-    socket.join(room);
-    rooms[room].playersCount++;
+    if (rooms[room].playersCount < 2) {
+      socket.join(room);
+      rooms[room].playersCount++;
+      io.emit('updateRoomsList', rooms);
+    }
+  });
+
+  socket.on('disconnecting', (e) => {
+    console.log('A user disconnected');
+    for (let room of socket.rooms) {
+      if (rooms[room] !== undefined) {
+        rooms[room].playersCount--;
+      }
+    };
     io.emit('updateRoomsList', rooms);
   });
 });
