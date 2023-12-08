@@ -1,5 +1,3 @@
-
-
 <svelte:head>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet"> 
 </svelte:head>
@@ -9,7 +7,7 @@
 <Card isFlipped={false} && theme={selectedOption}/>
 
 
-<button on:click={openPopup}>Open Popup</button>
+<button on:click={openPopup}>Choix du themes</button>
 
 <div class:popup={true} class:visible={popupVisible}>
   <h3>Select an option:</h3>
@@ -24,9 +22,6 @@
 </div>
 
 <div class:overlay={true} class:visible={popupVisible} on:click={closePopup}></div>
-
-
-<p>Selected Option: {selectedOption}</p>
 
 <script>
 
