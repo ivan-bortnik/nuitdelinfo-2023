@@ -1,0 +1,61 @@
+@import '../_palette.scss';
+
+:global(body) {
+    font-family: 'Nunito';
+    overflow-y: hidden;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+}
+
+.deck {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+:global(.deck > *) {
+    margin: 0px -15px;
+}
+
+.my-deck-wrapper {
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.my-deck-back {
+    background-color: $deck-support;
+    margin: 0px 100px;
+    border-radius: 8px;
+    margin-top: -100px;
+    height: 100px;
+}
+
+.draws {
+    display: flex;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+:global(.discards > *) {
+    margin: 30px;
+}
+
+:global(.draws > *) {
+    margin: 0px 10px;
+}
+
+#misinformations {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    gap: 20px 30px;
+}
