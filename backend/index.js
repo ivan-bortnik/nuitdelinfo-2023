@@ -48,7 +48,7 @@ io.on('connection', (socket) => {
       if (rooms[room] !== undefined) {
         rooms[room].playersCount--;
         if (rooms[room].playersCount == 0) {
-          delete  rooms[room];
+          delete rooms[room];
         }
       }
     };
